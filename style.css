@@ -74,8 +74,35 @@ main {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .title-section {
     width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: #5b2929;
+}
+
+.card {
+    width: 45%;
+    height: 200px;
+    border: 1px solid #5b2929;
+    border-radius: 5px;
+    background-color: #996c6c;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.card:hover {
+    cursor: pointer;
+    text-decoration: #f6fdc3 underline 0.5px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.37);
 }
