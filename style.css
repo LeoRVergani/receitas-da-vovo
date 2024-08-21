@@ -63,7 +63,7 @@ li:hover {
 
 main {
     background-color: #e8caca;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     padding: 30px 0;
@@ -105,4 +105,74 @@ main {
     cursor: pointer;
     text-decoration: #f6fdc3 underline 0.5px;
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.37);
+}
+
+/* ----------------------------------------------------------Estilizando o footer------------------------------------------------------ */
+
+footer {
+    background-color: #bc9494;
+    box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.75);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-container {
+    width: 65%; /* defino o tamanho do container e centralizo com o margin 0 auto*/
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    gap: 20px;
+}
+
+h3 {
+    color: #5b2929;
+}
+
+.newsletter,
+.sugestion {
+    margin: 5px 0;
+    height: 70%;
+}
+
+.newsletter,
+form,
+.sugestion {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+input:focus {
+    border: 2px solid #5b2929;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #996c6c;
+    color: #f6fdc3;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.37);
+    transition: 0.05s;
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Pseudo-classe active para pegar a estilização quando o botão estiver ativo, ou seja, ao clicar nele */
+button:active {
+    margin-left: 3px;
+    margin-top: 3px;
+    box-shadow: none;
 }
